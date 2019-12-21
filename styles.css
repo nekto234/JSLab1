@@ -1,0 +1,22 @@
+table,
+th,
+td {
+    border: 1px solid rgb(194, 194, 194);
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    background-color: rgb(232, 232, 232);
+}
+
+td {
+    vertical-align: top;
+    padding: 4px;
+}
+
+#dateTime,
+#dayOfWeek {
+    margin: 0;
+    vertical-align: top;
+}

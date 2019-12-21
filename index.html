@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Завдання</th>
+            <th></th>
+            <th>Результат</th>
+        </tr>
+        <tr>
+            <td><b>Завдання №1.</b> Виведення поточної дати та часу</td>
+            <td><button id="getDateTimeBtn" onclick="showCurrentDateTime()">Виконати</button></td>
+            <td>
+                <p id="dateTime"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №2.</b> Виведення дня тижня<br><input id="dayOfWeekInput" type="date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="showDayOfTheWeek(getDateFromInput())">Виконати</button></td>
+            <td>
+                <p id="dayOfWeek"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №3.</b> Дата яка була N днів назад<br><input id="daysAgo" type="text" name="Enter Date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="findDateDaysAgo(getDaysFromInput())">Виконати</button></td>
+            <td>
+                <p id="foundedDate"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №4.</b> За заданим роком та номером <br>визначає останній день місяця(введіть любий день в даті)<br><input id="dayAndMonth" type="date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="findLastDayOfMonth(getDateFromInput2())">Виконати</button></td>
+            <td>
+                <p id="lastDayOfMonth"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №5.</b> Реалізуйте функцію, яка повертає об'єкт з двома полями:<br>- кількість секунд, яка пройшла від початку сьогоднішнього дня;<br> - кількість секунд до початку наступного дня. <br>
+
+            </td>
+            <td><button id="getDateTimeBtn" onclick="seconds()">Виконати</button></td>
+            <td>
+                <p id="secondsFromThisDay"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №6.</b> Реалізувати виведення заданої дати <br>у вигляді рядка форматі ДД.ММ.РРРР:<br><input id="date" type="date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="formateDate(getUnformatedDate())">Виконати</button></td>
+            <td>
+                <p id="formatedDate"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №7.</b> Різниця між двома датами<br><input id="firstDate" type="date"><br> <input id="secondDate" type="date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="dateSubstitution(getTwoDates())">Виконати</button></td>
+            <td>
+                <p id="datesDifference"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №8.</b> Напишіть функцію formatDate(date),<br> Яка формує формує дату date так:<br> - якщо з часу date пройшло менше секунди, то повертає рядок «тільки що»; <br>- інакше, якщо з часу date пройшло менше хвилини, то «n сек. назад»;
+                <br>- інакше, якщо пройшло менше години, то «m хв. назад»; <br>- інакше, повна дата у форматі «дд.мм.рр гг:мм».
+                <br><input id="unformatedDate" type="datetime-local"><br>
+            </td>
+            <td><button id="getDateTimeBtn" onclick="dateFormat(getDateUnformated())">Виконати</button></td>
+            <td>
+                <p id="dateFormated"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №9.</b> Напишіть функцію, яка за введеним користувачем рядом <br>формує об’єкт date. Передбачте кілька форматів представлення дати і <br>напишіть інформацію про підтримувані формати на сторінці. <br> Формат Приклад запису дати
+                <br>рррр. ММ. дд<br>рррр-ММ-дд<br>рррр/ММ/дд<br>рррр-М-д<br>рррр-М-д<br>рррр/М/д<br>дд/ММ/рррр
+                <br>
+                <input id="dateString" type="text" name="Enter Date">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="convertToDateToObject(getDaysFromInput2())">Виконати</button></td>
+            <td>
+                <p id="dateObject"></p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Завдання №10.</b> Реалізуйте виведення дати на вказаній мові <br>(мова вказується 2-х значним кодом, <br>наприклад: ru, uk, en) у форматі: <br><i>неділя, 12 березня 2017 нашої ери, 15:05:00</i>
+                <br>
+                <input id="dateBox" type="text">
+            </td>
+            <td><button id="getDateTimeBtn" onclick="printDate(getDateUniversal())">Виконати</button></td>
+            <td>
+                <p id="printDate"></p>
+            </td>
+        </tr>
+    </table>
+    <script src="/lab3lib.js "></script>
+    <script src="lab3.js "></script>
+</body>
+
+</html>
